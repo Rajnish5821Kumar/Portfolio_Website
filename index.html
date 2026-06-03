@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajnish Kumar — Full Stack Developer & Software Engineer</title>
+  <meta name="description" content="Rajnish Kumar — B.Tech IT Graduate, Full Stack Developer & MERN Stack Developer. Expert in React.js, Node.js, Python, FastAPI. Available for freelance, internships, and full-time roles." />
+  <meta name="keywords" content="Rajnish Kumar, Full Stack Developer, MERN Stack, React Developer, Node.js, Python, FastAPI, Software Engineer, Freelancer, India" />
+  <meta name="author" content="Rajnish Kumar" />
+  <meta property="og:title" content="Rajnish Kumar — Full Stack Developer" />
+  <meta property="og:description" content="Premium portfolio of Rajnish Kumar — MERN Stack Developer & Software Engineer from India." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════ PRELOADER ══════════════════ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">RK</div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+      <p class="preloader-text">Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════ CURSOR ══════════════════ -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-outline"></div>
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <span class="logo-bracket">&lt;</span>RK<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certs</a></li>
+        <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <a href="#contact" class="nav-hire-btn">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════ MOBILE MENU ══════════════════ -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close"><i class="fas fa-times"></i></button>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-link">🏠 Home</a></li>
+      <li><a href="#about" class="mobile-link">👤 About</a></li>
+      <li><a href="#education" class="mobile-link">🎓 Education</a></li>
+      <li><a href="#skills" class="mobile-link">⚡ Skills</a></li>
+      <li><a href="#experience" class="mobile-link">💼 Experience</a></li>
+      <li><a href="#projects" class="mobile-link">🚀 Projects</a></li>
+      <li><a href="#certifications" class="mobile-link">🏅 Certifications</a></li>
+      <li><a href="#achievements" class="mobile-link">🏆 Achievements</a></li>
+      <li><a href="#services" class="mobile-link">🛠️ Services</a></li>
+      <li><a href="#contact" class="mobile-link">📞 Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ══════════════════ HERO SECTION ══════════════════ -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg">
+      <div class="hero-particles" id="particles-container"></div>
+      <div class="hero-gradient-orb orb-1"></div>
+      <div class="hero-gradient-orb orb-2"></div>
+      <div class="hero-gradient-orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge" data-aos="fade-down">
+          <span class="badge-dot"></span>
+          Available for Freelance &amp; Full-Time Roles
+        </div>
+        <h1 class="hero-name" data-aos="fade-up" data-aos-delay="100">
+          Hi, I'm <span class="gradient-text">Rajnish Kumar</span>
+        </h1>
+        <div class="hero-typewriter" data-aos="fade-up" data-aos-delay="200">
+          <span class="static-text">I'm a </span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+          B.Tech IT Graduate from RGIPT — specializing in building scalable, modern web applications 
+          with the MERN stack, REST APIs, and Python backends. Passionate about clean code, 
+          great UX, and solving real-world problems through technology.
+        </p>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+          <div class="hero-stat">
+            <span class="stat-num" data-count="6">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-num" data-count="10">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-num" data-count="5">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="500">
+          <a href="#contact" class="btn-primary" id="hire-btn">
+            <i class="fas fa-handshake"></i> Hire Me
+          </a>
+          <a href="d:/Rajnish Kumar/Desktop/Rajnish_cv/Rajnish_Resume.pdf" download class="btn-secondary" id="resume-btn">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+        <div class="hero-social" data-aos="fade-up" data-aos-delay="600">
+          <a href="https://github.com/Rajnish5821Kumar" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/rajnish-kumar-5b480a255/" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:rk2452003@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/916206573293" target="_blank" class="social-icon whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://leetcode.com/Rajnish5821Kumar" target="_blank" class="social-icon" title="LeetCode"><i class="fas fa-code"></i></a>
+          <a href="http://kaggle.com/rajnish1419kumar" target="_blank" class="social-icon" title="Kaggle"><i class="fas fa-database"></i></a>
+        </div>
+      </div>
+      <div class="hero-right" data-aos="zoom-in" data-aos-delay="300">
+        <div class="profile-card">
+          <div class="profile-ring"></div>
+          <div class="profile-ring ring-2"></div>
+          <img src="profile.jpg" alt="Rajnish Kumar — Full Stack Developer" class="profile-img" id="profile-photo" />
+          <div class="profile-badge-floating badge-react">
+            <i class="fab fa-react"></i> React
+          </div>
+          <div class="profile-badge-floating badge-node">
+            <i class="fab fa-node-js"></i> Node.js
+          </div>
+          <div class="profile-badge-floating badge-python">
+            <i class="fab fa-python"></i> Python
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ ABOUT SECTION ══════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Get To Know Me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col" data-aos="fade-right">
+          <div class="about-img-wrap">
+            <img src="profile.jpg" alt="Rajnish Kumar" class="about-img" />
+            <div class="about-exp-badge">
+              <span class="exp-num">2022</span>
+              <span class="exp-label">Batch Year</span>
+            </div>
+          </div>
+          <div class="about-quick-info">
+            <div class="quick-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Bihar, India</span>
+            </div>
+            <div class="quick-item">
+              <i class="fas fa-university"></i>
+              <span>RGIPT, Jais, Amethi</span>
+            </div>
+            <div class="quick-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>B.Tech — Information Technology</span>
+            </div>
+            <div class="quick-item">
+              <i class="fas fa-envelope"></i>
+              <span>rk2452003@gmail.com</span>
+            </div>
+            <div class="quick-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 6206573293</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content-col" data-aos="fade-left">
+          <h3 class="about-subtitle">Full Stack Developer &amp; Software Engineer</h3>
+          <p class="about-text">
+            I'm <strong>Rajnish Kumar</strong>, a passionate Full Stack Developer and B.Tech Information Technology 
+            graduate from <strong>Rajiv Gandhi Institute of Petroleum Technology (RGIPT), Jais, Amethi</strong> 
+            — an Institute of National Importance. I specialize in building modern, scalable web applications 
+            using the MERN stack and Python-based backends.
+          </p>
+          <p class="about-text">
+            With hands-on experience in <strong>React.js, Node.js, Express.js, MongoDB, FastAPI, Flask</strong>, 
+            and multiple database systems, I bring a full-spectrum development approach — from crafting beautiful 
+            frontends to architecting robust backends and REST APIs.
+          </p>
+          <p class="about-text">
+            I'm actively seeking <strong>freelance projects, internship opportunities, and full-time roles</strong> 
+            where I can contribute meaningfully and grow alongside a talented team. I'm driven by clean code, 
+            performance, and building products that genuinely make a difference.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <i class="fas fa-rocket"></i>
+              <div>
+                <h4>Fast Learner</h4>
+                <p>Quickly adapts to new technologies and frameworks</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-code-branch"></i>
+              <div>
+                <h4>Problem Solver</h4>
+                <p>Strong DSA foundation and competitive programming background</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-users"></i>
+              <div>
+                <h4>Team Player</h4>
+                <p>Collaborative mindset with experience in agile environments</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-palette"></i>
+              <div>
+                <h4>UI/UX Focused</h4>
+                <p>Creates visually stunning and highly usable interfaces</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary mt-2">
+            <i class="fas fa-paper-plane"></i> Let's Work Together
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ EDUCATION SECTION ══════════════════ -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Academic Background</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="edu-timeline">
+        <!-- RGIPT -->
+        <div class="edu-card" data-aos="fade-up">
+          <div class="edu-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">B.Tech — Information Technology</h3>
+                <p class="edu-institution">Rajiv Gandhi Institute of Petroleum Technology (RGIPT)</p>
+                <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Jais, Amethi, Uttar Pradesh — Institute of National Importance</p>
+              </div>
+              <div class="edu-year-badge">2022 – 2026</div>
+            </div>
+            <div class="edu-tags">
+              <span class="edu-tag">Data Structures & Algorithms</span>
+              <span class="edu-tag">Database Management Systems</span>
+              <span class="edu-tag">Computer Networks</span>
+              <span class="edu-tag">Operating Systems</span>
+              <span class="edu-tag">Software Engineering</span>
+              <span class="edu-tag">Web Technologies</span>
+              <span class="edu-tag">Machine Learning</span>
+              <span class="edu-tag">Object Oriented Programming</span>
+            </div>
+            <p class="edu-note">
+              🏛️ RGIPT is a premier technical institution established by an Act of Parliament. 
+              Pursuing rigorous coursework in Information Technology with focus on full-stack 
+              development, algorithms, and modern software engineering practices.
+            </p>
+          </div>
+        </div>
+
+        <!-- 12th -->
+        <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="edu-icon">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">Class XII — Science (PCM)</h3>
+                <p class="edu-institution">Higher Secondary Education</p>
+                <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Bihar State Board</p>
+              </div>
+              <div class="edu-year-badge">2021 – 2022</div>
+            </div>
+            <div class="edu-tags">
+              <span class="edu-tag">Physics</span>
+              <span class="edu-tag">Chemistry</span>
+              <span class="edu-tag">Mathematics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10th -->
+        <div class="edu-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="edu-icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">Class X — Secondary Education</h3>
+                <p class="edu-institution">Secondary Education</p>
+                <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Bihar State Board</p>
+              </div>
+              <div class="edu-year-badge">2019 – 2020</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ SKILLS SECTION ══════════════════ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Technical Arsenal</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-categories">
+        <!-- Languages -->
+        <div class="skill-category" data-aos="fade-up">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item" data-skill="85">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" /></div>
+              <span class="skill-name">C++</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-item" data-skill="80">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /></div>
+              <span class="skill-name">Java</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-item" data-skill="88">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" /></div>
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-item" data-skill="90">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /></div>
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-item" data-skill="75">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" /></div>
+              <span class="skill-name">TypeScript</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+              <span class="skill-pct">75%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-desktop"></i></div>
+            <h3>Frontend Development</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item" data-skill="92">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" /></div>
+              <span class="skill-name">HTML5</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-item" data-skill="88">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" /></div>
+              <span class="skill-name">CSS3</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-item" data-skill="90">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" /></div>
+              <span class="skill-name">React.js</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-item" data-skill="72">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" /></div>
+              <span class="skill-name">React Native</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div>
+              <span class="skill-pct">72%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="150">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend Development</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item" data-skill="88">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" /></div>
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-item" data-skill="85">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" /></div>
+              <span class="skill-name">Express.js</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-item" data-skill="82">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" /></div>
+              <span class="skill-name">Flask</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-item" data-skill="80">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" /></div>
+              <span class="skill-name">FastAPI</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+              <span class="skill-pct">80%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
+            <h3>Databases</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item" data-skill="85">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" /></div>
+              <span class="skill-name">MongoDB</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-item" data-skill="80">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /></div>
+              <span class="skill-name">MySQL</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-item" data-skill="75">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" /></div>
+              <span class="skill-name">SQL Server</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-item" data-skill="78">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" /></div>
+              <span class="skill-name">SQLite</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div>
+              <span class="skill-pct">78%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="250">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+            <h3>Tools & Technologies</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item" data-skill="90">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" /></div>
+              <span class="skill-name">Git</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-item" data-skill="88">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /></div>
+              <span class="skill-name">GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-item" data-skill="85">
+              <div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" /></div>
+              <span class="skill-name">Postman</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-item" data-skill="78">
+              <div class="skill-icon"><i class="fas fa-project-diagram" style="font-size:2rem;color:#00d4ff"></i></div>
+              <span class="skill-name">REST APIs</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-item" data-skill="70">
+              <div class="skill-icon"><i class="fas fa-network-wired" style="font-size:2rem;color:#ff6b6b"></i></div>
+              <span class="skill-name">GraphQL</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+              <span class="skill-pct">70%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DSA -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+            <h3>CS Fundamentals</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item" data-skill="85">
+              <div class="skill-icon"><i class="fas fa-sitemap" style="font-size:2rem;color:#ffd700"></i></div>
+              <span class="skill-name">Data Structures</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-item" data-skill="82">
+              <div class="skill-icon"><i class="fas fa-cogs" style="font-size:2rem;color:#4ade80"></i></div>
+              <span class="skill-name">Algorithms</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-item" data-skill="80">
+              <div class="skill-icon"><i class="fas fa-shield-alt" style="font-size:2rem;color:#a78bfa"></i></div>
+              <span class="skill-name">OOP Concepts</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+              <span class="skill-pct">80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Badges Cloud -->
+      <div class="tech-cloud" data-aos="fade-up">
+        <h3 class="tech-cloud-title">Technology Ecosystem</h3>
+        <div class="tech-badges">
+          <span class="tech-badge">React.js</span>
+          <span class="tech-badge">Node.js</span>
+          <span class="tech-badge">MongoDB</span>
+          <span class="tech-badge">Express.js</span>
+          <span class="tech-badge">FastAPI</span>
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">TypeScript</span>
+          <span class="tech-badge">HTML5</span>
+          <span class="tech-badge">CSS3</span>
+          <span class="tech-badge">C++</span>
+          <span class="tech-badge">Java</span>
+          <span class="tech-badge">MySQL</span>
+          <span class="tech-badge">SQL Server</span>
+          <span class="tech-badge">Git</span>
+          <span class="tech-badge">GitHub</span>
+          <span class="tech-badge">Postman</span>
+          <span class="tech-badge">REST APIs</span>
+          <span class="tech-badge">GraphQL</span>
+          <span class="tech-badge">Flask</span>
+          <span class="tech-badge">React Native</span>
+          <span class="tech-badge">SQLite</span>
+          <span class="tech-badge">JWT Auth</span>
+          <span class="tech-badge">Streamlit</span>
+          <span class="tech-badge">DSA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ EXPERIENCE SECTION ══════════════════ -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Work History</span>
+        <h2 class="section-title">My <span class="gradient-text">Experience</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Full Stack Developer Intern</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Freelance & Independent Projects</p>
+              </div>
+              <span class="timeline-date">2024 – Present</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Built and deployed multiple production-grade web applications using MERN stack</li>
+              <li>Developed RESTful APIs and integrated third-party services including HubSpot OAuth</li>
+              <li>Created responsive frontends with React.js and vanilla HTML/CSS/JS</li>
+              <li>Implemented JWT authentication, role-based access control, and secure backend systems</li>
+              <li>Deployed applications on Vercel and managed GitHub version control</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>React.js</span><span>Node.js</span><span>MongoDB</span><span>FastAPI</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Smart Campus Navigation — Developer</h3>
+                <p class="timeline-company"><i class="fas fa-university"></i> RGIPT, Jais, Amethi</p>
+              </div>
+              <span class="timeline-date">2024 – 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Designed and developed a full Smart Campus Management System for RGIPT IT Batch 2022–26</li>
+              <li>Implemented Google Maps integration for campus navigation across two campuses (Jais & Bengaluru)</li>
+              <li>Built a searchable IT batch student directory with filter by skills/interests</li>
+              <li>Created faculty directory, achievements showcase, and department information portal</li>
+              <li>Deployed to GitHub Pages with full Streamlit Python backend integration</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Google Maps API</span><span>Python/Streamlit</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Backend Developer — Finance System</h3>
+                <p class="timeline-company"><i class="fas fa-chart-line"></i> Zorvyn Finance App (Assessment Project)</p>
+              </div>
+              <span class="timeline-date">2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Architected a role-based finance tracking system with FastAPI backend and Streamlit frontend</li>
+              <li>Implemented JWT-based authentication with bcrypt password hashing</li>
+              <li>Built hierarchical role system (Admin/Analyst/Viewer) with granular permissions</li>
+              <li>Developed analytics engine with category breakdown, monthly totals, and trend analysis</li>
+              <li>Integrated Plotly charts, Pandas data handling, and CSV export functionality</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>FastAPI</span><span>SQLAlchemy</span><span>JWT</span><span>Streamlit</span><span>Plotly</span><span>SQLite</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Web Developer — Doctor Clinic Website</h3>
+                <p class="timeline-company"><i class="fas fa-hospital"></i> MediCare Plus (Freelance / Personal Project)</p>
+              </div>
+              <span class="timeline-date">2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Built a complete multi-page doctor clinic website deployed on Vercel</li>
+              <li>Implemented an AI-style patient chatbot (MediBot) using JavaScript</li>
+              <li>Integrated appointment booking, WhatsApp contact, and Google Maps embed</li>
+              <li>Achieved fully responsive design with glassmorphism and smooth animations</li>
+              <li>Live at: <a href="https://doctor-website-roan.vercel.app/" target="_blank" style="color:var(--primary)">doctor-website-roan.vercel.app</a></li>
+            </ul>
+            <div class="timeline-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Glassmorphism</span><span>Vercel</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ PROJECTS SECTION ══════════════════ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="project-filter" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Project 1: Smart Campus -->
+        <div class="project-card" data-category="fullstack" data-aos="fade-up">
+          <div class="project-img-wrap">
+            <div class="project-mockup mockup-blue">
+              <div class="mockup-header"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="mockup-nav"></div>
+                <div class="mockup-content">
+                  <div class="mockup-map"></div>
+                  <div class="mockup-sidebar">
+                    <div class="mockup-btn-row"><div></div><div></div></div>
+                    <div class="mockup-btn-row"><div></div><div></div></div>
+                    <div class="mockup-btn-row"><div></div><div></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Rajnish5821Kumar/smart-campus-navigation" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link-btn"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-type fullstack">Full Stack</span>
+              <span class="project-year">2024–25</span>
+            </div>
+            <h3 class="project-title">Smart Campus Management System</h3>
+            <p class="project-desc">
+              A comprehensive campus portal for RGIPT IT Batch 2022–26 featuring live Google Maps 
+              navigation for two campuses, a searchable student directory (46 students), faculty profiles, 
+              achievements showcase, and department information — all built with pure HTML/CSS/JS + Python Streamlit backend.
+            </p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Google Maps Navigation</span>
+              <span><i class="fas fa-check"></i> Student Directory (46)</span>
+              <span><i class="fas fa-check"></i> Faculty Profiles</span>
+              <span><i class="fas fa-check"></i> GPS Location Support</span>
+              <span><i class="fas fa-check"></i> Hackathon Achievements</span>
+            </div>
+            <div class="project-stack">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python</span><span>Streamlit</span><span>Google Maps API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Rajnish5821Kumar/smart-campus-navigation" target="_blank" class="proj-link-github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Doctor Website -->
+        <div class="project-card featured-project" data-category="fullstack frontend" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-img-wrap">
+            <div class="project-mockup mockup-teal">
+              <div class="mockup-header"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="mockup-hero-section">
+                  <div class="mockup-hero-text">
+                    <div class="mh1"></div>
+                    <div class="mh2"></div>
+                    <div class="mh3"></div>
+                    <div class="mh-btn"></div>
+                  </div>
+                  <div class="mockup-hero-img"></div>
+                </div>
+                <div class="mockup-cards-row">
+                  <div class="mc"></div><div class="mc"></div><div class="mc"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Rajnish5821Kumar/Doctor_Website" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
+              <a href="https://doctor-website-roan.vercel.app/" target="_blank" class="project-link-btn"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-type frontend">Frontend</span>
+              <span class="project-year">2025</span>
+              <span class="project-live-badge"><i class="fas fa-circle"></i> Live</span>
+            </div>
+            <h3 class="project-title">MediCare Plus — Doctor Clinic Website</h3>
+            <p class="project-desc">
+              A fully responsive, premium multi-page doctor clinic website deployed on Vercel. Features an 
+              AI-style patient chatbot (MediBot), appointment booking system, doctor profiles with ratings, 
+              WhatsApp integration, Google Maps embed, and glassmorphism design.
+            </p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> MediBot AI Chatbot</span>
+              <span><i class="fas fa-check"></i> Appointment Booking</span>
+              <span><i class="fas fa-check"></i> 7 Pages Multi-layout</span>
+              <span><i class="fas fa-check"></i> WhatsApp Integration</span>
+              <span><i class="fas fa-check"></i> Glassmorphism UI</span>
+            </div>
+            <div class="project-stack">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Font Awesome</span><span>Google Maps</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Rajnish5821Kumar/Doctor_Website" target="_blank" class="proj-link-github"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://doctor-website-roan.vercel.app/" target="_blank" class="proj-link-live"><i class="fas fa-rocket"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Zorvyn Finance -->
+        <div class="project-card" data-category="backend python" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-img-wrap">
+            <div class="project-mockup mockup-purple">
+              <div class="mockup-header"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="mockup-dashboard">
+                  <div class="mockup-kpis">
+                    <div class="mkpi green"></div>
+                    <div class="mkpi red"></div>
+                    <div class="mkpi blue"></div>
+                  </div>
+                  <div class="mockup-chart-area"></div>
+                  <div class="mockup-table"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Rajnish5821Kumar/Zorvyn_Finance_App" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-type backend">Backend</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3 class="project-title">Zorvyn Finance System</h3>
+            <p class="project-desc">
+              A role-based finance tracking system with FastAPI REST backend and Streamlit browser dashboard. 
+              Features JWT authentication with bcrypt, three-tier role hierarchy (Admin/Analyst/Viewer), 
+              full CRUD for transactions, analytics with Plotly charts, and CSV export.
+            </p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> JWT + bcrypt Auth</span>
+              <span><i class="fas fa-check"></i> Role-Based Access</span>
+              <span><i class="fas fa-check"></i> Plotly Analytics</span>
+              <span><i class="fas fa-check"></i> Swagger API Docs</span>
+              <span><i class="fas fa-check"></i> CSV Export</span>
+            </div>
+            <div class="project-stack">
+              <span>FastAPI</span><span>SQLAlchemy</span><span>JWT</span><span>Streamlit</span><span>Plotly</span><span>Pandas</span><span>SQLite</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Rajnish5821Kumar/Zorvyn_Finance_App" target="_blank" class="proj-link-github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: E-Commerce -->
+        <div class="project-card" data-category="fullstack" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-img-wrap">
+            <div class="project-mockup mockup-orange">
+              <div class="mockup-header"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="mockup-shop">
+                  <div class="ms-header"></div>
+                  <div class="ms-products">
+                    <div class="ms-product"></div><div class="ms-product"></div><div class="ms-product"></div>
+                    <div class="ms-product"></div><div class="ms-product"></div><div class="ms-product"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Rajnish5821Kumar" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-type fullstack">Full Stack</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">E-Commerce Website</h3>
+            <p class="project-desc">
+              A full-featured e-commerce platform with product catalog, shopping cart, user authentication, 
+              order management, and payment integration. Built with MERN stack architecture featuring 
+              real-time inventory management and admin dashboard.
+            </p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Product Catalog</span>
+              <span><i class="fas fa-check"></i> Shopping Cart</span>
+              <span><i class="fas fa-check"></i> User Auth (JWT)</span>
+              <span><i class="fas fa-check"></i> Admin Dashboard</span>
+              <span><i class="fas fa-check"></i> Order Management</span>
+            </div>
+            <div class="project-stack">
+              <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Rajnish5821Kumar" target="_blank" class="proj-link-github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: E-Learning -->
+        <div class="project-card" data-category="fullstack" data-aos="fade-up" data-aos-delay="250">
+          <div class="project-img-wrap">
+            <div class="project-mockup mockup-green">
+              <div class="mockup-header"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="mockup-elearn">
+                  <div class="mel-sidebar"></div>
+                  <div class="mel-content">
+                    <div class="mel-video"></div>
+                    <div class="mel-progress">
+                      <div class="mel-bar"></div>
+                    </div>
+                    <div class="mel-lessons">
+                      <div></div><div></div><div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Rajnish5821Kumar" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-type fullstack">Full Stack</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">E-Learning Application</h3>
+            <p class="project-desc">
+              A feature-rich online learning platform with course management, video lessons, progress 
+              tracking, quiz system, and student-teacher interaction. Built with React.js frontend and 
+              Node.js backend with MongoDB for course content storage.
+            </p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> Course Management</span>
+              <span><i class="fas fa-check"></i> Progress Tracking</span>
+              <span><i class="fas fa-check"></i> Quiz System</span>
+              <span><i class="fas fa-check"></i> Video Lessons</span>
+              <span><i class="fas fa-check"></i> Certificates</span>
+            </div>
+            <div class="project-stack">
+              <span>React.js</span><span>Node.js</span><span>MongoDB</span><span>Express.js</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Rajnish5821Kumar" target="_blank" class="proj-link-github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: HubSpot OAuth -->
+        <div class="project-card" data-category="backend fullstack" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-img-wrap">
+            <div class="project-mockup mockup-pink">
+              <div class="mockup-header"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="mockup-oauth">
+                  <div class="mo-logo"></div>
+                  <div class="mo-form">
+                    <div class="mo-input"></div>
+                    <div class="mo-input"></div>
+                    <div class="mo-btn"></div>
+                  </div>
+                  <div class="mo-tokens">
+                    <div class="mo-token"></div>
+                    <div class="mo-token"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Rajnish5821Kumar" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-type backend">Backend</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3 class="project-title">HubSpot OAuth Integration</h3>
+            <p class="project-desc">
+              A complete HubSpot CRM OAuth 2.0 integration system for seamless third-party authentication 
+              and CRM data access. Implemented secure token management, refresh token rotation, and 
+              CRM data synchronization for business automation workflows.
+            </p>
+            <div class="project-features">
+              <span><i class="fas fa-check"></i> OAuth 2.0 Flow</span>
+              <span><i class="fas fa-check"></i> Token Refresh</span>
+              <span><i class="fas fa-check"></i> CRM Integration</span>
+              <span><i class="fas fa-check"></i> Secure Storage</span>
+              <span><i class="fas fa-check"></i> Webhook Support</span>
+            </div>
+            <div class="project-stack">
+              <span>Node.js</span><span>Express.js</span><span>OAuth 2.0</span><span>HubSpot API</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Rajnish5821Kumar" target="_blank" class="proj-link-github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CERTIFICATIONS SECTION ══════════════════ -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Credentials</span>
+        <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card" data-aos="fade-up">
+          <div class="cert-icon"><i class="fab fa-python"></i></div>
+          <div class="cert-body">
+            <h3>Python Programming</h3>
+            <p class="cert-issuer">NPTEL / Coursera</p>
+            <p class="cert-desc">Core Python, OOP, data structures, file handling, and libraries</p>
+            <span class="cert-badge">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-icon"><i class="fab fa-react"></i></div>
+          <div class="cert-body">
+            <h3>React.js Development</h3>
+            <p class="cert-issuer">Udemy / Coursera</p>
+            <p class="cert-desc">Hooks, Context API, React Router, Redux, and component architecture</p>
+            <span class="cert-badge">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="cert-icon"><i class="fas fa-database"></i></div>
+          <div class="cert-body">
+            <h3>Database Management & SQL</h3>
+            <p class="cert-issuer">NPTEL</p>
+            <p class="cert-desc">Relational databases, SQL queries, normalization, and optimization</p>
+            <span class="cert-badge">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="cert-icon"><i class="fas fa-server"></i></div>
+          <div class="cert-body">
+            <h3>Node.js & Express Backend</h3>
+            <p class="cert-issuer">Udemy</p>
+            <p class="cert-desc">RESTful APIs, middleware, authentication, MongoDB integration</p>
+            <span class="cert-badge">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="cert-icon"><i class="fas fa-code"></i></div>
+          <div class="cert-body">
+            <h3>Data Structures & Algorithms</h3>
+            <p class="cert-issuer">Coding Platforms</p>
+            <p class="cert-desc">Arrays, trees, graphs, DP, sorting algorithms, and competitive programming</p>
+            <span class="cert-badge">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="cert-icon"><i class="fab fa-git-alt"></i></div>
+          <div class="cert-body">
+            <h3>Git & GitHub Version Control</h3>
+            <p class="cert-issuer">GitHub Learning Lab</p>
+            <p class="cert-desc">Branching, merging, pull requests, CI/CD, and collaboration workflows</p>
+            <span class="cert-badge">Verified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ ACHIEVEMENTS SECTION ══════════════════ -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Recognition</span>
+        <h2 class="section-title">Achievements &amp; <span class="gradient-text">Awards</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="achieve-grid-custom achieve-3col">
+        <div class="achieve-card-custom gold" data-aos="fade-up">
+          <div class="ac-trophy">🏆</div>
+          <div class="ac-body">
+            <span class="ac-badge gold">HACKATHON WIN</span>
+            <h3>Smart India Hackathon 2023</h3>
+            <p class="ac-org">Ministry of Education · Government of India</p>
+            <p class="ac-desc">
+              Multiple IT Batch 2022-26 teams competed and won at the national-level Smart India Hackathon 2023. 
+              Teams brought home prize money of ₹50,000 per team.
+            </p>
+            <div class="ac-prize">₹50,000 Prize Money</div>
+          </div>
+        </div>
+        <div class="achieve-card-custom silver" data-aos="fade-up" data-aos-delay="100">
+          <div class="ac-trophy">🥇</div>
+          <div class="ac-body">
+            <span class="ac-badge silver">SPACE HACKATHON</span>
+            <h3>ISRO SIF — Space Innovation Forum 2023</h3>
+            <p class="ac-org">Indian Space Research Organisation</p>
+            <p class="ac-desc">
+              Won the ISRO Space Innovation Forum Hackathon 2023. Built a space technology innovation 
+              project that impressed the ISRO panel of judges.
+            </p>
+          </div>
+        </div>
+        <div class="achieve-card-custom purple" data-aos="fade-up" data-aos-delay="200">
+          <div class="ac-trophy">🏅</div>
+          <div class="ac-body">
+            <span class="ac-badge purple">NATIONAL WIN</span>
+            <h3>Symposium on Digitalization Hackathon 2024</h3>
+            <p class="ac-org">National Symposium on Digitalization</p>
+            <p class="ac-desc">
+              IT Batch 2022-26 team won the national Digitalization Hackathon 2024, showcasing 
+              innovative digital solutions with a prize of ₹45,000.
+            </p>
+            <div class="ac-prize">₹45,000 Prize Money</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ SERVICES SECTION ══════════════════ -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">What I Offer</span>
+        <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon-wrap"><i class="fas fa-layer-group"></i></div>
+          <h3>Full Stack Development</h3>
+          <p>End-to-end web application development from database design to responsive frontend using MERN stack.</p>
+          <ul class="service-list">
+            <li>React.js Frontend</li>
+            <li>Node.js + Express Backend</li>
+            <li>MongoDB / MySQL Database</li>
+            <li>REST API Design</li>
+            <li>Authentication & Authorization</li>
+          </ul>
+          <div class="service-price">Starting from ₹5,000</div>
+        </div>
+        <div class="service-card featured-service" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon-wrap"><i class="fas fa-globe"></i></div>
+          <h3>Web Development</h3>
+          <p>Custom, responsive, and visually stunning websites built with modern HTML5, CSS3, and JavaScript.</p>
+          <ul class="service-list">
+            <li>Business / Portfolio Sites</li>
+            <li>Landing Pages</li>
+            <li>Healthcare / Doctor Sites</li>
+            <li>SEO Optimization</li>
+            <li>Mobile-First Design</li>
+          </ul>
+          <div class="service-price">Starting from ₹3,000</div>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-icon-wrap"><i class="fas fa-plug"></i></div>
+          <h3>API Development</h3>
+          <p>Robust, scalable REST APIs and GraphQL endpoints with proper documentation and security.</p>
+          <ul class="service-list">
+            <li>RESTful API Design</li>
+            <li>GraphQL APIs</li>
+            <li>OAuth Integration</li>
+            <li>Swagger Documentation</li>
+            <li>Third-party API Integration</li>
+          </ul>
+          <div class="service-price">Starting from ₹4,000</div>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon-wrap"><i class="fab fa-react"></i></div>
+          <h3>React Development</h3>
+          <p>Modern, performant React.js applications with hooks, context, and state management.</p>
+          <ul class="service-list">
+            <li>React.js SPAs</li>
+            <li>React Native Apps</li>
+            <li>Component Libraries</li>
+            <li>State Management (Redux)</li>
+            <li>Performance Optimization</li>
+          </ul>
+          <div class="service-price">Starting from ₹4,500</div>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="service-icon-wrap"><i class="fas fa-server"></i></div>
+          <h3>Backend Development</h3>
+          <p>Scalable Python backends with FastAPI/Flask and Node.js microservices architecture.</p>
+          <ul class="service-list">
+            <li>FastAPI / Flask APIs</li>
+            <li>Node.js Services</li>
+            <li>JWT Authentication</li>
+            <li>Role-Based Access</li>
+            <li>Analytics Engines</li>
+          </ul>
+          <div class="service-price">Starting from ₹4,000</div>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon-wrap"><i class="fas fa-database"></i></div>
+          <h3>Database Design</h3>
+          <p>Efficient database architecture, schema design, query optimization, and data modeling.</p>
+          <ul class="service-list">
+            <li>MongoDB Schema Design</li>
+            <li>MySQL / SQL Server</li>
+            <li>Query Optimization</li>
+            <li>Data Modeling</li>
+            <li>Migration & Seeding</li>
+          </ul>
+          <div class="service-price">Starting from ₹2,500</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ SOCIAL PROFILES SECTION ══════════════════ -->
+  <section id="social-profiles" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Connect & Collaborate</span>
+        <h2 class="section-title">Find Me <span class="gradient-text">Online</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="social-profiles-grid">
+        <a href="https://github.com/Rajnish5821Kumar" target="_blank" class="social-profile-card" data-aos="fade-up">
+          <div class="sp-icon github"><i class="fab fa-github"></i></div>
+          <h3>GitHub</h3>
+          <p>@Rajnish5821Kumar</p>
+          <span class="sp-label">Source Code & Projects</span>
+        </a>
+        <a href="https://www.linkedin.com/in/rajnish-kumar-5b480a255/" target="_blank" class="social-profile-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="sp-icon linkedin"><i class="fab fa-linkedin"></i></div>
+          <h3>LinkedIn</h3>
+          <p>Rajnish Kumar</p>
+          <span class="sp-label">Professional Network</span>
+        </a>
+        <a href="https://www.upwork.com/freelancers/~013bd3ff7016bfc167" target="_blank" class="social-profile-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="sp-icon upwork"><i class="fas fa-laptop-code"></i></div>
+          <h3>Upwork</h3>
+          <p>Rajnish Kumar</p>
+          <span class="sp-label">Hire on Upwork</span>
+        </a>
+        <a href="https://www.fiverr.com/rajnish5821/buying?source=avatar_menu_profile" target="_blank" class="social-profile-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="sp-icon fiverr"><i class="fas fa-dollar-sign"></i></div>
+          <h3>Fiverr</h3>
+          <p>rajnish5821</p>
+          <span class="sp-label">Gig Services</span>
+        </a>
+        <a href="http://kaggle.com/rajnish1419kumar" target="_blank" class="social-profile-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="sp-icon kaggle"><i class="fas fa-chart-bar"></i></div>
+          <h3>Kaggle</h3>
+          <p>rajnish1419kumar</p>
+          <span class="sp-label">Data Science & ML</span>
+        </a>
+        <a href="https://leetcode.com/Rajnish5821Kumar" target="_blank" class="social-profile-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="sp-icon leetcode"><i class="fas fa-code"></i></div>
+          <h3>LeetCode</h3>
+          <p>Rajnish5821Kumar</p>
+          <span class="sp-label">Problem Solving</span>
+        </a>
+        <a href="https://www.hackerrank.com/Rajnish5821Kumar" target="_blank" class="social-profile-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="sp-icon hackerrank"><i class="fas fa-terminal"></i></div>
+          <h3>HackerRank</h3>
+          <p>Rajnish5821Kumar</p>
+          <span class="sp-label">Coding Challenges</span>
+        </a>
+        <a href="https://www.codechef.com/users/rajnish5821" target="_blank" class="social-profile-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="sp-icon codechef"><i class="fas fa-utensils"></i></div>
+          <h3>CodeChef</h3>
+          <p>rajnish5821</p>
+          <span class="sp-label">Competitive Programming</span>
+        </a>
+        <a href="https://codeforces.com/profile/Rajnish5821Kumar" target="_blank" class="social-profile-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="sp-icon codeforces"><i class="fas fa-fire"></i></div>
+          <h3>Codeforces</h3>
+          <p>Rajnish5821Kumar</p>
+          <span class="sp-label">Competitive Coding</span>
+        </a>
+        <a href="https://stackoverflow.com/users/rajnishkumar" target="_blank" class="social-profile-card" data-aos="fade-up" data-aos-delay="450">
+          <div class="sp-icon stackoverflow"><i class="fab fa-stack-overflow"></i></div>
+          <h3>Stack Overflow</h3>
+          <p>Rajnish Kumar</p>
+          <span class="sp-label">Q&A Community</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CONTACT SECTION ══════════════════ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos="fade-right">
+          <h3 class="contact-info-title">Let's Build Something Great Together</h3>
+          <p class="contact-info-text">
+            I'm currently available for freelance projects, internships, and full-time positions. 
+            Whether you have a project in mind or just want to say hello — my inbox is always open!
+          </p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="cd-label">Email</span>
+                <a href="mailto:rk2452003@gmail.com" class="cd-value">rk2452003@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="cd-label">Phone / WhatsApp</span>
+                <a href="tel:+916206573293" class="cd-value">+91 6206573293</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="cd-label">Location</span>
+                <span class="cd-value">Bihar, India</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <span class="cd-label">Response Time</span>
+                <span class="cd-value">Within 24 hours</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social-links">
+            <a href="https://wa.me/916206573293" target="_blank" class="whatsapp-btn">
+              <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a href="mailto:rk2452003@gmail.com" class="email-btn">
+              <i class="fas fa-envelope"></i> Send Email
+            </a>
+          </div>
+        </div>
+        <!-- Contact Form -->
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject *</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="Project inquiry / Job opportunity / General" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-budget">Project Budget (Optional)</label>
+              <select id="contact-budget" name="budget">
+                <option value="">Select budget range</option>
+                <option>Below ₹5,000</option>
+                <option>₹5,000 – ₹15,000</option>
+                <option>₹15,000 – ₹50,000</option>
+                <option>₹50,000+</option>
+                <option>Let's discuss</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message *</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project, requirements, or anything you'd like to discuss..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn" id="submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="form-success" class="form-success" style="display:none;">
+              <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span>&lt;</span>RK<span>/&gt;</span></div>
+          <p>Full Stack Developer &amp; Software Engineer<br />Building digital experiences that matter.</p>
+          <div class="footer-social">
+            <a href="https://github.com/Rajnish5821Kumar" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rajnish-kumar-5b480a255/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:rk2452003@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/916206573293" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="http://kaggle.com/rajnish1419kumar" target="_blank"><i class="fas fa-chart-bar"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Full Stack Dev</a></li>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">API Development</a></li>
+            <li><a href="#services">React Development</a></li>
+            <li><a href="#services">Database Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:rk2452003@gmail.com">rk2452003@gmail.com</a></li>
+            <li><a href="tel:+916206573293">+91 6206573293</a></li>
+            <li><span>Bihar, India</span></li>
+            <li><a href="https://wa.me/916206573293" target="_blank">WhatsApp Chat</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Rajnish Kumar. All rights reserved. Crafted with ❤️ and lots of ☕</p>
+        <p class="footer-tech">Built with HTML5, CSS3 &amp; Vanilla JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/916206573293" target="_blank" class="whatsapp-float" id="whatsapp-float" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">Chat with me!</span>
+  </a>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
